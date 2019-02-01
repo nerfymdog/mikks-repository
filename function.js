@@ -41,12 +41,14 @@ function onDeviceReady(){
 	refreshDeviceList();
 }
 
+
 	 
 function refreshDeviceList(){
 	//deviceList =[];
 	document.getElementById("bleDeviceList").innerHTML = ''; // empties the list
 	if (cordova.platformId === 'android') { // Android filtering is broken
 		ble.scan([], 5, onDiscoverDevice, onError);
+		setTimeout(refreshDeviceList, 5000);
 	} else {
 		//alert("Disconnected");
 		ble.scan([blue.serviceUUID], 5, onDiscoverDevice, onError);
@@ -56,7 +58,9 @@ function refreshDeviceList(){
 
 function onDiscoverDevice(device){
 	//Make a list in html and show devises
-		if (device.name == "MapShop")		
+		if (device.name == "MapShop" ||
+			device.name == "MapBeacon1" ||
+			device.name == "MapBeacon2")		
 		{
 			var listItem = document.createElement('li'),
 			html = device.name+ "," + device.id;
