@@ -14,14 +14,13 @@
      <body onload="onLoad()">
 		<div id = "content">
 			<h1>MapShop</h1>
-			<div class="radar">
-				<div class="radarOverlay"></div>
-				<a>
-				<img src="greendot.PNG" class="Grøn dot til position" width="48" height="48" alt=>
-				</a>
-				</div>
 			
-			<img src="MapMap.PNG" alt="Vores kort over butikken" style="width:500px;height:600px;">  
+		
+			<div class="parent">
+			<img class="Radar" src="greendot.png" alt="Radar til butik"/>
+			<img class="Butik" src="MapMap.png" alt="Vores kort over butikken"/> 
+			 <img class="Radar2" src="greendot.png" alt="Radar2 til butik"/>			
+			</div>
 			<ul id="bleDeviceList"> </ul>  
 			<button id="refreshButton" onClick = "refreshDeviceList()">Refresh</button>
 			<br>
