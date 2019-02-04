@@ -119,3 +119,8 @@ function onDisconnect(){
 function onError(reason)  {
 	alert("ERROR: " + reason); // real apps should use notification.alert
 }
+
+//if ( id == MapBEACON1 && MapBEACON2)
+//{
+	//document.getElementsByClassName(Radar1).removeRadar(Radar) 
+	
