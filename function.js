@@ -72,7 +72,7 @@ function onDiscoverDevice(device){
 			var child1 = document.getElementById("Radar");
 			var child2 = document.getElementById("Radar2");
 			parent.removeChild(child1);
-			parent.appendChild(child2);
+			parent.appendChild(child2) style = "display: initial";
 			
 		}
 }
