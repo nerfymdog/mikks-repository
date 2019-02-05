@@ -47,7 +47,7 @@ function refreshDeviceList(){
 	//deviceList =[];
 	document.getElementById("bleDeviceList").innerHTML = ''; // empties the list
 	if (cordova.platformId === 'android') { // Android filtering is broken
-		ble.scan([], 5, onDiscoverDevice, onError);
+		ble.scan([], 5, onDiscoverDevice, onError, removeRadar);
 		setTimeout(refreshDeviceList, 5000);
 	} else {
 		//alert("Disconnected");
@@ -66,7 +66,6 @@ function onDiscoverDevice(device){
 			html = device.name+ "," + device.id;
 			listItem.innerHTML = html;
 			document.getElementById("bleDeviceList").appendChild(listItem);
-			document.getElementsByClassName(Radar || greendot.jpg).style.display = 'none';
 		}
 }
 
@@ -121,10 +120,10 @@ function onError(reason)  {
 	alert("ERROR: " + reason); // real apps should use notification.alert
 }
 
-/*function removeRadar()
+function removeRadar()
 {
 if ( device.name == MapBeacon1) //&& device.name2 == MapBeacon2)
 {
 	document.getElementsByClassName(Radar || greendot.jpg).style.display = 'none'; 
 }
-}/*
+}
