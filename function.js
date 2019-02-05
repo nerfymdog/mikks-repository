@@ -122,8 +122,8 @@ function onError(reason)  {
 
 function removeRadar()
 {
-if ( device.name1 == MapBeacon1) //&& device.name2 == MapBeacon2)
+if ( device.name == MapBeacon1) //&& device.name2 == MapBeacon2)
 {
-	document.getElementsByClassName(Radar1).removeRadar(Radar); 
+	document.getElementsByClassName(Radar).removeRadar(Radar); 
 }
 }
