@@ -72,8 +72,7 @@ function onDiscoverDevice(device){
 			var child1 = document.getElementById("Radar");
 			var child2 = document.getElementById("Radar2");
 			parent.removeChild(child1);
-			parent.show_image(child2);
-			
+			child2.style.visibility = "visible";
 		}
 }
 
