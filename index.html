@@ -16,11 +16,18 @@
 			<h1>MapShop</h1>
 			
 		
-			<div class="parent">
-			<img class="Radar" src="greendot.jpg" alt="Radar til butik"/>
-			<img class="Butik" src="MapMap.jpg" alt="Vores kort over butikken"/> 
-			<img class="Radar2" src="greendot2.jpg" alt="Radar2 til butik"/>		
+			<div id="parent">
+			<img id="Radar" src="greendot.jpg" alt="Radar til butik"/>
+			<img id="Butik" src="MapMap.jpg" alt="Vores kort over butikken"/> 
+			<img id="Radar2" src="greendot2.jpg" alt="Radar2 til butik"/>
 			</div>
+			
+	<!--		<script>
+			var parent = document.getElementById("parent");
+			var child = document.getElementById(Radar2);
+			parent.removeChild(child);
+			</script>-->
+			
 			<ul id="bleDeviceList"> </ul>  
 			<button id="refreshButton" onClick = "refreshDeviceList()">Refresh</button>
 			<br>
