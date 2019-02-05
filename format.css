@@ -39,13 +39,13 @@ img{
 	width: 100%;
 }
 
-.parent
+#parent
 {
 	position: relative;
 	top: 0;
 	left: 0;
 }
-.Radar
+#Radar
 {
 	position: absolute;
 	top: 30%;
@@ -54,7 +54,7 @@ img{
 	width: 5%;
 	
 }
-.Radar2
+#Radar2
 {
 	position: absolute;
 	top: 68%;
@@ -63,7 +63,7 @@ img{
 	width: 5%;
 	
 }
-.Butik
+#Butik
 {
 	position: relative;
 	top: 0;
