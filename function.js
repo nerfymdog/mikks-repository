@@ -120,7 +120,7 @@ function onError(reason)  {
 	alert("ERROR: " + reason); // real apps should use notification.alert
 }
 
-//if ( id == MapBEACON1 && MapBEACON2)
-//{
-	//document.getElementsByClassName(Radar1).removeRadar(Radar) 
+if ( device.name1 == MapBeacon1 && device.name2 == MapBeacon2)
+{
+	document.getElementsByClassName(Radar1).removeRadar(Radar); 
 	
