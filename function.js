@@ -83,7 +83,7 @@ function conn(){
 function onConnect(){
 	document.getElementById("statusDiv").innerHTML = " Status: Connected";
 	//document.getElementById("bleId").innerHTML = ConnDeviceId;
-	ble.startNotification(ConnDeviceId, blue.serviceUUID, blue.rxCharacteristic, onData, onError);
+	ble.startNotification(ConnDeviceId, blue.serviceUUID, blue.rxCharacteristic, onData, onError, removeRadar);
 }
 
 //failure
@@ -120,7 +120,10 @@ function onError(reason)  {
 	alert("ERROR: " + reason); // real apps should use notification.alert
 }
 
+function removeRadar()
+{
 if ( device.name1 == MapBeacon1 && device.name2 == MapBeacon2)
 {
 	document.getElementsByClassName(Radar1).removeRadar(Radar); 
-	
+}
+}
