@@ -124,6 +124,6 @@ function removeRadar()
 {
 if ( device.name == MapBeacon1) //&& device.name2 == MapBeacon2)
 {
-	document.getElementsByClassName(Radar).removeRadar(Radar); 
+	document.getElementsByClassName(Radar).style.display = 'none'; 
 }
 }
