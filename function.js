@@ -65,6 +65,9 @@ function onDiscoverDevice(device){
 			html = device.name+ "," + device.id;
 			listItem.innerHTML = html;
 			document.getElementById("bleDeviceList").appendChild(listItem);
+		}
+		while (device.name == "MapBeacon1" && "MapBeacon2")
+		{
 			var parent = document.getElementById("parent");
 			var child = document.getElementById("Radar2");
 			parent.removeChild(child);
