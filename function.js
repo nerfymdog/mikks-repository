@@ -126,13 +126,3 @@ function onDisconnect(){
 function onError(reason)  {
 	alert("ERROR: " + reason); // real apps should use notification.alert
 }
-
-/*function removeRadar()
-{
-if ( device.name == "MapBeacon1") //&& device.name2 == MapBeacon2)
-{
-			var parent = document.getElementById("parent");
-			var child = document.getElementById("Radar2");
-			parent.removeChild(child);
-}
-}*/

@@ -1,6 +1,21 @@
-body{
-	background-color: pink; 
+body {
+  margin: 0;
+  min-width: 250px;
+  background-color: #f44336;
+}
+
+.header {
+  background-color: #f44336;
+  padding: 30px 40px;
+  color: white;
 }	
+.headerT {
+  background-color: #f44336;
+  color: white;
+}	
+
+
+
 img{
 	width: 100%;	
 }
@@ -19,24 +34,19 @@ img{
 	
 }	
 #messageInput{
-	
+	width: 30%;
+	margin: auto;
 }
 #list{
-	background-color: red;
+	background-color: gray;
 }
 
 /* width will be 100% of content */
 #refreshButton{
-	width: 100%;
+	width: 25%;
 }
 #sendButton{
-	width: 100%;
-}
-#ledOnButton{
-	width: 100%;
-}
-#ledOffButton{
-	width: 100%;
+	width: 25%;
 }
 
 #parent
