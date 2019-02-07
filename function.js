@@ -100,7 +100,7 @@ function onConnError(){
 }
 
  function onData(data){ // data received from Arduino
-	document.getElementById("receiveDiv").innerHTML =  "Received: " + bytesToString(data) + "<br>";
+	document.getElementById("recieveDiv").innerHTML =  "Received: " + bytesToString(data) + "</br>";
 }
 
 function data(txt){
@@ -113,7 +113,7 @@ function sendData() { // send data to Arduino
 }
 	
 function onSend(){
-	document.getElementById("sendDiv").innerHTML = "Sent: " + messageInput.value + "<br>";
+	document.getElementById("sendDiv").innerHTML = "Sent: " + messageInput.value + "</br>";
 }
 
 function disconnect() {
