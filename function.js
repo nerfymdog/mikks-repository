@@ -104,7 +104,7 @@ function onConnError(){
 }
 
 function data(txt){
-	messageInput.value = txt;
+	messageInput.value = "";
 }	
 
 function sendData() { // send data to Arduino
